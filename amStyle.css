@@ -1,0 +1,982 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #161515;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3vw;
+}
+
+#navbar ul li a {
+    color: rgb(212, 142, 36);
+    display: block;
+    padding: 3px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: aliceblue;
+
+}
+
+#tfp {
+    display: none;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+.heading {
+    color: white;
+    position: absolute;
+    top: 33%;
+    text-align: center;
+    width: 100%;
+    font-size: 6vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+#hpara {
+    color: rgb(253, 182, 27);
+    position: absolute;
+    top: 44%;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#Fh {
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    font-size: 2.6rem;
+    font-family: 'Playfair Display', serif;
+    color: rgb(156, 153, 0);
+
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#info2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+#products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+
+}
+
+#Fp {
+    background-color: rgba(255, 255, 255, 0.74);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+#Sp {
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+#Tp {
+    background-color: rgba(255, 255, 255, 0.712);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+#img {
+    height: 13rem;
+    width: 19rem;
+}
+
+#img2 {
+    height: 13rem;
+    width: 19rem;
+}
+
+#img3 {
+    height: 13rem;
+    width: 19rem;
+}
+
+#productinfo {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-bottom: 5rem;
+}
+
+#productsec {
+    background-color: rgb(253, 252, 237);
+}
+
+#opa {
+    font-size: 1.5rem;
+    color: rgb(156, 153, 0);
+    font-family: 'Playfair Display', serif;
+}
+
+#tpa {
+    font-size: 1.5rem;
+    color: rgb(156, 153, 0);
+    font-family: 'Playfair Display', serif;
+}
+
+#thpa {
+    font-size: 1.5rem;
+    color: rgb(156, 153, 0);
+    font-family: 'Playfair Display', serif;
+}
+
+#mopa {
+    display: none;
+}
+
+#mtpa {
+    display: none;
+}
+
+#mthpa {
+    display: none;
+}
+
+#history {
+    padding-bottom: 5rem;
+}
+
+#Sh {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    font-size: 2.6rem;
+    font-family: 'Playfair Display', serif;
+    color: rgb(156, 153, 0);
+}
+
+#infoflex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#hosp {
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    color: rgb(92, 90, 0);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#Testimonial {
+    padding-top: 10rem;
+    background-color: rgba(167, 156, 1, 0.719);
+    padding-bottom: 13rem;
+}
+
+#th {
+    font-size: 2.6rem;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#clients {
+    padding-top: 3rem;
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    color: rgb(63, 62, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients2 {
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    color: rgb(63, 62, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+#review1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: rgb(61, 60, 0);
+    font-size: 1.2vw;
+    padding-bottom: 0.5rem;
+}
+
+#whitebox {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    margin-left: 9rem;
+}
+
+#whitebox1 {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+#whitebox2 {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    margin-right: 9rem;
+}
+
+#reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rp {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: end;
+    padding-right: 2rem;
+}
+
+
+#head {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+#head2 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+#tf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+#map {
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+#mapt {
+    display: none;
+}
+
+#contact2 {
+    display: flex;
+    justify-content: center;
+    background-color: #252c30;
+    
+}
+
+
+@media all and (max-width: 500px) {
+    #head {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #fp {
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #tfp {
+        display: flex;
+        width: 100vw;
+        height: 23rem;
+        opacity: 0.9;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #head2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #products {
+        display: contents;
+
+    }
+}
+
+@media all and (max-width: 500px) {
+    #productsec {
+        padding-bottom: 5rem;
+
+    }
+}
+
+@media all and (max-width: 500px) {
+    #productinfo {
+        display: none;
+
+    }
+}
+
+@media all and (max-width: 500px) {
+    #Fp {
+        margin-left: 6rem;
+        margin-right: 5rem;
+        background-color: rgba(255, 255, 255, 0.74);
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media all and (max-width: 500px) {
+    #Sp {
+        margin-left: 6rem;
+        margin-right: 5rem;
+        background-color: rgba(255, 255, 255, 0.74);
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media all and (max-width: 500px) {
+    #Tp {
+        margin-left: 6rem;
+        margin-right: 5rem;
+        background-color: rgba(255, 255, 255, 0.74);
+        border-radius: 12px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media all and (max-width: 500px) {
+    #mopa {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-family: 'Playfair Display', serif;
+        color: rgb(156, 153, 0);
+    }
+}
+
+@media all and (max-width: 500px) {
+    #mtpa {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-family: 'Playfair Display', serif;
+        color: rgb(156, 153, 0);
+    }
+}
+
+@media all and (max-width: 500px) {
+    #mthpa {
+        padding-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-family: 'Playfair Display', serif;
+        color: rgb(156, 153, 0);
+    }
+}
+
+#offd {
+    padding-left: 5rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+@media all and (max-width: 500px) {
+    #offd {
+        padding-left: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+}
+
+#offh {
+    color: rgb(224, 179, 54);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #offh {
+        font-size: 1rem;
+        padding-top: 0.5rem
+    }
+}
+
+
+#add {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #add {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+
+#phonen {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #phonen {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+#mailp {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #mailp {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+
+#lid {
+    padding-top: 7rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    padding-bottom: 7rem;
+}
+
+@media all and (max-width: 500px) {
+    #lid {
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+#lih {
+    color: rgb(224, 179, 54);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #lih {
+        font-size: 1rem;
+        padding-top: 0.5rem
+    }
+}
+
+#home {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+#home a{
+    color: white;
+}
+@media all and (max-width: 500px) {
+    #home {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+#pro {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+#pro a{
+    color: white;
+}
+
+@media all and (max-width: 500px) {
+    #pro {
+
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+#contact {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #contact {
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+#buisd {
+    padding-top: 7rem;
+    padding-right: 5rem;
+    padding-bottom: 7rem;
+}
+
+@media all and (max-width: 500px) {
+    #buisd {
+        padding-top: 3rem;
+        padding-right: 0rem;
+        padding-bottom: 3rem;
+    }
+}
+
+#buish {
+    color: rgb(224, 179, 54);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #buish {
+        color: rgb(224, 179, 54);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        padding-top: 0.5rem
+    }
+}
+
+#mts {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #mts {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+#mtst {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #mtst {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        padding-top: 0.5rem;
+    }
+}
+
+#sc {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #sc {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+#pro {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+
+@media all and (max-width: 500px) {
+    #pro {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+#cont {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem
+}
+#cont a{
+    color: white;
+}
+
+@media all and (max-width: 500px) {
+    #cont {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5rem;
+        padding-top: 0.5rem
+    }
+}
+
+@media all and (max-width: 500px) {
+    #img {
+        
+        height: 8rem;
+        width: 12rem;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #img2 {
+        
+        height: 8rem;
+        width: 12rem;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #img3 {
+        height: 8rem;
+        width: 12rem;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #opa {
+        font-size: 0.8rem;
+        color: rgb(156, 153, 0);
+        font-family: 'Playfair Display', serif;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #tpa {
+        font-size: 0.8rem;
+        color: rgb(156, 153, 0);
+        font-family: 'Playfair Display', serif;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #thpa {
+        font-size: 0.8rem;
+        color: rgb(156, 153, 0);
+        font-family: 'Playfair Display', serif;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    .heading {
+        font-size: 0rem;
+        color: rgb(0, 0, 0);
+    }
+}
+
+@media all and (max-width: 500px) {
+    #fp {
+        height: 90vw;
+        width: 100vw;
+
+    }
+}
+
+@media all and (max-width: 500px) {
+    #navbar {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+}
+
+@media all and (max-width: 500px) {
+    #navbar ul li {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #navbar::before {
+        background-color: #fffaec;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #hpara {
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #Fh {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #info {
+        font-size: 0.7rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #info2 {
+        font-size: 0.7rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #Sh {
+
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #vi {
+        padding-left: 8vw;
+        height: 21rem;
+        width: 21rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #hosp {
+        padding-top: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #th {
+        font-size: 2.3rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #clients {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #clients2 {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #infoflex {
+        display: contents;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #reviews {
+        display: contents;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #whitebox {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #whitebox1 {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #whitebox2 {
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #review1 {
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #Testimonial {
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+    }
+}
+@media all and (max-width: 500px) {
+    #map {
+        display: none;
+    }
+}
+@media all and (max-width: 500px) {
+    #mapt {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 7rem;
+    }
+}
